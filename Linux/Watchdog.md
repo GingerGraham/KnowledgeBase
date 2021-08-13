@@ -45,7 +45,7 @@ Applies to physical machines such as Raspberry Pi
                 # Note that this is the number of pages!
                 # To get the real size, check how large the pagesize is on your machine.
                 min-memory              = 50000 # 200 MB
-                allocatable-memory      = 10000 # 50 MB
+                allocatable-memory      = 10000 # 40 MB
 
         - Example process/PID monitor
 

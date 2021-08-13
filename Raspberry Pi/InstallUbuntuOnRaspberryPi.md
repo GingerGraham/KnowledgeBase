@@ -52,28 +52,18 @@ This article documents the manual build process I use to commission a new Raspbe
 
 1. Log out
 1. Log back in as *temp*
-1. Rename ubuntu user
-
-        usermod -l <newname> -d /home/<newname> -m ubuntu # <-- oldname
-
-Taken from (https://www.codegrepper.com/code-examples/shell/rename+username+ubuntu+20.04)
-
+1. See [Rename a user](..\Linux\RenameUser.md)
 ## Rename Group
 
 1. Without logging out having renamed the default user now rename the group
-
-        sudo groupmod -n <newname> ubuntu # <-- old groupname
+    - See [Rename a group](..\Linux\RenameGroup.md)
 
 1. Now you can log out and back in with the new username
 
 ## Rename Host
 
-- User hostnamectl to rename host without a reboot
-
-        hostnamectl set-hostname "new-hostname"
-
-Taken from (https://phoenixnap.com/kb/ubuntu-20-04-change-hostname)
-
+- Use hostnamectl to rename host without a reboot
+    - See [Rename a host](..\Linux\RenameHostMachine.md)
 ## Apply Updates
 
 A simple command to update repo list and apply all applicable updates while also cleaning up any old packages
