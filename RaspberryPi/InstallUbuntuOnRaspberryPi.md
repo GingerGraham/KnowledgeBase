@@ -55,7 +55,7 @@ This article documents the manual build process I use to commission a new Raspbe
 1. See [Rename a user](..\Linux\RenameUser.md)
 ## Rename Group
 
-1. Without logging out having renamed the default user now rename the group
+1. Without logging out from temp having renamed the default user now rename the group
     - See [Rename a group](..\Linux\RenameGroup.md)
 
 1. Now you can log out and back in with the new username
