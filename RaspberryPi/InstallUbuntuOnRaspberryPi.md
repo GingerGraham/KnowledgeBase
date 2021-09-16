@@ -48,7 +48,7 @@ This article documents the manual build process I use to commission a new Raspbe
 1. Create a temp user with `sudo` privileges
 
         sudo adduser temp
-        sudo usermode -aG sudo
+        sudo usermod -aG sudo temp
 
 1. Log out
 1. Log back in as *temp*
