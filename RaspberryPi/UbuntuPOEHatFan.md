@@ -13,11 +13,12 @@ By default the PoE+ Hat is only supported in Raspian.  Running Ubuntu server may
         # this file. Please refer to the README file for a description of the various
         # configuration files on the boot partition.
         
+        dtoverlay=pwm
+        dtoverlay=gpio-fan
         dtoverlay=rpi-poe
-        
-        dtparam=poe_fan_temp0=80000,poe_fan_temp0_hyst=2000
-        dtparam=poe_fan_temp1=75000,poe_fan_temp1_hyst=5000
-        dtparam=poe_fan_temp2=70000,poe_fan_temp2_hyst=3000
-        dtparam=poe_fan_temp3=60000,poe_fan_temp3_hyst=5000**
+        dtparam=poe_fan_temp0=40000,poe_fan_temp0_hyst=5000
+        dtparam=poe_fan_temp1=50000,poe_fan_temp1_hyst=3000
+        dtparam=poe_fan_temp2=60000,poe_fan_temp2_hyst=5000
+        dtparam=poe_fan_temp3=70000,poe_fan_temp3_hyst=2000
 
 1. Reboot
