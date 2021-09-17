@@ -19,4 +19,3 @@
             dos2unix: converting file HelloWorld.py to Unix format...
 
 - Reference: [Scott Hanselman: Carriage Returns and Line Endings](https://www.hanselman.com/blog/carriage-returns-and-line-feeds-will-ultimately-bite-you-some-git-tips)
-some 
