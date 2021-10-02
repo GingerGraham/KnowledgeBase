@@ -12,6 +12,7 @@ This section includes articles for working with Linux and various distros
     - [Monitoring Temperatures](CPUThermal.md)
 - System Administration
     - [Changing Time Zones](ChangeTimeZone.md)
+    - [Install sudo and add user](AddSudo.md)
     - [Rename a Linux group](RenameGroup.md)
     - [Rename a Linux machine](RenameHostMachine.md)
     - [Rename a Linux user](RenameUser.md)
