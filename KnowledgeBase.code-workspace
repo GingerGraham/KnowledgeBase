@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"activityBar.background": "#382B1C",
+			"titleBar.activeBackground": "#4E3C28",
+			"titleBar.activeForeground": "#FBF9F7"
+		},
+		"markdownlint.config": {
+			"MD028": false,
+			"MD025": {
+				"front_matter_title": ""
+			}
+		}
+	}
+}
