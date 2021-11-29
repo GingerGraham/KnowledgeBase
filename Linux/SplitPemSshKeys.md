@@ -16,6 +16,14 @@ openssl pkey < *pem_file* > *file_name*
 openssl rsa -in *exported_key* -pubout > *public_key.pub*
 ```
 
+1. Apply a passphrase
+
+Secure the key with a passphrase
+
+```bash
+ssh-keygen -p -f *exported_key*
+```
+
 ## Permissions
 
 Remember to set permissions on private key to 600
