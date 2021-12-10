@@ -44,17 +44,27 @@ Install any baseline tooling that might be generally needed, e.g. vim or wget et
 **Example**
 
 ```bash
-dnf install git vim wget curl zsh bat -y
+dnf install git git-lfs vim wget curl zsh bat -y
 ```
 
 ## Specific version of node
 
-Easiest way to specify a particular version is through [NVM](https://github.com/nvm-sh/nvm)
+For many Operating Systems the easiest way to specify a particular version is through [NVM](https://github.com/nvm-sh/nvm)
 
 ```bash
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
 source ~/.bashrc
 nvm install v16.13.0 #Note: replace with required version as necessary
+```
+
+Fedora provides granular control over the version of Node.js that is installed.  This can be done by using the `dnf` package manager
+
+```bash
+dnf install nodejs-<version_required>
+
+# Example
+
+dnf install nodejs-16.13.0
 ```
 
 ## Specific version of python
