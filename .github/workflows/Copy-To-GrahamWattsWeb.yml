@@ -14,10 +14,10 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source_file: 'index.md'
+          source_file: 'index.md assets/ Apple/ Development/ DevOps/ HardwareSpecific/ Linux/ Networking/ VirtualisationAndPerformance/ Windows/'
           destination_repo: 'gingergraham/GrahamWattsWeb'
           destination_folder: 'src/_pages/knowledge/'
-          destination-branch: 'test'
+          destination_branch: 'test'
           user_email: '34165628+GingerGraham@users.noreply.github.com'
           user_name: 'Graham Watts'
           commit_message: 'Copy from Knowledge Base'
