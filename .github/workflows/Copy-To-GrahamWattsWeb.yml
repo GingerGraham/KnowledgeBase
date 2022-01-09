@@ -7,6 +7,8 @@ jobs:
     steps:
       - name: Copy files to another repository
         uses: nkoppel/push-files-to-another-repository@v1.1.0
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source-files: 'apple/ Development/'
           destination-username: 'gingergraham'
