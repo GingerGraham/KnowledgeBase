@@ -1,0 +1,16 @@
+on: 
+  workflow_dispatch:
+
+jobs:
+  copy-to-web:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copy files to another repository
+        uses: nkoppel/push-files-to-another-repository@v1.1.0
+        with:
+          source-files: 'apple/ Development/'
+          destination-username: 'gingergraham'
+          destination-repository: 'GrahamWattsWeb'
+          destination-branch: 'test'
+          destination-directory: 'src/_pages/knowledge/'
+          commit-email: '34165628+GingerGraham@users.noreply.github.com'
