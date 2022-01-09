@@ -22,14 +22,7 @@ jobs:
           user_email: '34165628+GingerGraham@users.noreply.github.com'
           user_name: 'Graham Watts'
           commit_message: 'Copy from Knowledge Base'
-
-        # with:
-        #   source-file: './Apple/*.md'
-        #   destination-username: 'gingergraham'
-        #   destination-repository: 'GrahamWattsWeb'
-        #   destination-directory: 'src/_pages/knowledge/'
-        #   commit-email: '34165628+GingerGraham@users.noreply.github.com'
-
+          
 # source_file: The file or directory to be moved. Uses the same syntax as the rsync command. Incude the path for any files not in the repositories root directory.
 # destination_repo: The repository to place the file or directory in.
 # destination_folder: [optional] The folder in the destination repository to place the file in, if not the root directory.
@@ -39,3 +32,46 @@ jobs:
 # destination_branch_create: [optional] A branch to be created with this commit, defaults to commiting in destination_branch
 # commit_message: [optional] A custom commit message for the commit. Defaults to Update from https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}
 # use_rsync: [optional] Uses rsync -avh instead of cp -R to perform the base operation. Currently works as an experimental feature (due to lack of testing) but can speed up updates to large collections of files with many small changes by only syncing the changes and not copying the entire contents again. Please understand your use case before using this, and provide feedback as issues if needed.
+
+      - name: Copy files to GrahamWattsWeb
+        uses: nkoppel/push-files-to-another-repository@v1.1.0
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-file: 'index.md Apple/'
+          destination-username: 'gingergraham'
+          destination-repository: 'GrahamWattsWeb'
+          destination-branch: 'test'
+          destination-directory: 'src/_pages/knowledge/'
+          commit-email: '34165628+GingerGraham@users.noreply.github.com'
+          commit-username: 'Graham Watts'
+          commit-message: 'Copy from KnowledgeBase'
+
+# source-files (argument)
+# The files/directories to copy to the destination repository. Can have multiple space-separated filenames and globbing.
+
+# destination-username (argument)
+# The name of the user or organization which owns the destination repository. E.g. nkoppel
+
+# destination-repository (argument)
+# The name of the repository to copy files to, E.g. push-files-to-another-repository
+
+# destination-branch (argument) [optional]
+# The branch name for the destination repository. Defaults to master.
+
+# destination-directory (argument) [optional]
+# The directory in the destination repository to copy the source files into. Defaults to the destination project root.
+
+# commit-username (argument) [optional]
+# The username to use for the commit in the destination repository. Defaults to destination-username
+
+# commit-email (argument)
+# The email to use for the commit in the destination repository.
+
+# commit-message (argument) [optional]
+# The commit message to be used in the output repository. Defaults to "Update from [destination url]@[commit]".
+
+# The string ORIGIN_COMMIT is replaced by [destination url]@[commit].
+
+# API_TOKEN_GITHUB (environment)
+# The github api token which allows this action to push to the destination repository. E.g.: API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
