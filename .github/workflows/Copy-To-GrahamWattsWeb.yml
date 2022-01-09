@@ -5,8 +5,8 @@ jobs:
   copy-to-web:
     runs-on: ubuntu-latest
     steps:
-      - name: Copy files to another repository
-        uses: nkoppel/push-files-to-another-repository@v1.1.0
+      - name: Push a file(s) to GrahamWattsWeb
+        uses: dmnemec/copy_file_to_another_repo_action@v1.1.1
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
