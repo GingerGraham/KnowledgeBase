@@ -10,7 +10,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-files: './Apple/ ./Development/'
+          source-files: 'apple/'
           destination-username: 'gingergraham'
           destination-repository: 'GrahamWattsWeb'
           destination-branch: 'test'
