@@ -5,6 +5,10 @@ jobs:
   copy-to-web:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout KnowledgeBase
+        uses: actions/checkout@v2
+        with:
+          submodules: true
       - name: Push a file(s) to GrahamWattsWeb
         uses: dmnemec/copy_file_to_another_repo_action@v1.1.1
         env:
