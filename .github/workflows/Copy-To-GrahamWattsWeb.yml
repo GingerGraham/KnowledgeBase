@@ -14,7 +14,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-files: 'index.md Apple/'
+          source-files: '*'
           destination-username: 'gingergraham'
           destination-repository: 'GrahamWattsWeb'
           destination-branch: 'test'
