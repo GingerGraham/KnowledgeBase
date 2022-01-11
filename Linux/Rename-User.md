@@ -1,3 +1,5 @@
+---
+---
 # Rename a user on Linux
 
 1. Example to rename user named *ubuntu*

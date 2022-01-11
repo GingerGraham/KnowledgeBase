@@ -1,6 +1,6 @@
 ---
 ---
-## SSH Keys and Apple Keychain
+# SSH Keys and Apple Keychain
 
 SSH keys can be saved on the user Apple Keychain and recalled from the keychain to avoid adding keys to each terminal session.  Once keys are added a single ssh-add command can be added to the terminal session file to load the keys.
 

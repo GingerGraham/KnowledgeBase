@@ -1,3 +1,5 @@
+---
+---
 # Watchdog
 
 ## Index
@@ -51,9 +53,9 @@ Applies to physical machines such as Raspberry Pi
 
                 # Monitoring system processes including PiHole related processes
                 # Set by Graham Watts on 2021-05-27
-                pidfile		= /var/run/pihole-FTL.pid
-                pidfile		= /var/run/lighttpd.pid
-                pidfile		= /var/run/sshd.pid
+                pidfile    = /var/run/pihole-FTL.pid
+                pidfile    = /var/run/lighttpd.pid
+                pidfile    = /var/run/sshd.pid
 
 1. Enable the service
 
@@ -61,4 +63,4 @@ Applies to physical machines such as Raspberry Pi
         sudo systemctl start watchdog
         sudo systemctl status watchdog
 
-Take from: https://diode.io/raspberry%20pi/running-forever-with-the-raspberry-pi-hardware-watchdog-20202/
+Taken from: https://diode.io/raspberry%20pi/running-forever-with-the-raspberry-pi-hardware-watchdog-20202/

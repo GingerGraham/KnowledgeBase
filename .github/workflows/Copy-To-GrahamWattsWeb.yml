@@ -2,7 +2,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  copy-to-web:
+  copy-to-grahamwattsweb:
     runs-on: ubuntu-latest
     steps:
       - name: checkout KnowledgeBase
