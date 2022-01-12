@@ -1,3 +1,5 @@
+---
+---
 # Rename a host machine
 
 - Use hostnamectl to change the host name

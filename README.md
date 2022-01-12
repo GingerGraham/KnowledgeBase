@@ -2,14 +2,24 @@
 
 This repository is my personal knowledge base of collected knowledge and experiences
 
-## Subjects
+It is also published to my website at <https://www.grahamwatts.co.uk>
 
-1. [Apple](./Apple/index.md)
-1. [Development](./Development/index.md)
-1. [DevOps](./DevOps/index.md)
-1. [Hardware](./HardwareSpecific/index.md)
-    1. [Raspberry Pi](./RaspberryPi/index.md)
-1. [Linux](./Linux/index.md)
-1. [Networking](./Networking/index.md)
-1. [Virtualisation & Performance](./VirtualisationAndPerformance/index.md)
-1. [Windows](./Windows/index.md)
+## New Articles
+
+- Articles should be named replacing spaces with hyphons `-`
+- All articles should start with the Jekyll Front Matter designator at the top of the page before any content
+  - Not doing this will prevent the page being published on the website
+  - Any pages that do not need to be published, such as this ReadMe can omit the Front Matter, or include `published: false` in the Front Matter
+
+```yml
+---
+# Front Matter
+---
+```
+
+```yml
+---
+published: false
+# Explicit statement to prevent web publishing
+---
+```

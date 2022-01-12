@@ -1,3 +1,5 @@
+---
+---
 # Line Endings
 
 ## Index
@@ -6,10 +8,10 @@
 
 ## Linux Line Endings Error
 
-- Error message: `/usr/bin/env: ‘python\r’`
+- Error message: `/usr/bin/env: 'python\r'`
 
         gwatts@gw-x260$ ./FirstMaths.py
-        /usr/bin/env: ‘python\r’: No such file or directory
+        /usr/bin/env: 'python\r': No such file or directory
 
 - Cause: Windows **CRLF** endings being used
 - Resolution: `dos2unix`
