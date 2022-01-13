@@ -1,5 +1,3 @@
----
----
 # Amazon AWS
 
 This section covers working with Amazon Web Services (AWS).

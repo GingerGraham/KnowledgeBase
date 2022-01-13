@@ -1,10 +1,3 @@
----
-permalink: /knowledge
-redirect_from:
-    - /kb/
-    - /kba/
-# Front Matter for Jekyll web publishing
----
 # Subjects
 
 1. [Apple](./Apple/Apple-Index.md)

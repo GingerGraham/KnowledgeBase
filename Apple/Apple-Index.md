@@ -1,5 +1,3 @@
----
----
 # Apple
 
 This section includes articles for working with Apple MacOS

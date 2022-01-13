@@ -1,5 +1,3 @@
----
----
 # Raspberry Pi
 
 This section includes articles for working with Raspberry Pi devices

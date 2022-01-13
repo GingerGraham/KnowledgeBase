@@ -1,5 +1,3 @@
----
----
 # Hardware Specific
 
 This section includes knowledge about hardware specific topics.

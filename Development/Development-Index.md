@@ -1,5 +1,3 @@
----
----
 # Development Knowledge
 
 ## Index
