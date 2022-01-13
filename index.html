@@ -1,0 +1,14 @@
+---
+<!-- For use when published to www.grahamwatts.co.uk -->
+permalink: /knowledge
+redirect_from:
+    - /kb/
+    - /kba/
+# Front Matter for Jekyll web publishing
+---
+{% assign tools = site.pages | where_exp: "item" , "item.path contains 'myFolder'"| map: 'dir' | uniq %}
+<ul>
+  {% for tool in tools %}
+    <li><a class="page-link" href="{{ tool | prepend: site.baseurl }}">{{ tool }}</a></li>
+  {% endfor %}
+</ul>
