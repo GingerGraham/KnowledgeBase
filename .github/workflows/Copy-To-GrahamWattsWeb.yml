@@ -9,6 +9,9 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: true
+      - name: Add Front Matter
+        run: .github/scripts/addFrontMatter.sh
+        shell: bash
       - name: Copy files to GrahamWattsWeb
         uses: nkoppel/push-files-to-another-repository@v1.1.0
         env:
