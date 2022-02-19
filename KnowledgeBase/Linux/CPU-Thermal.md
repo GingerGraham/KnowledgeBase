@@ -1,5 +1,3 @@
----
----
 ## Linux Check CPU Temp
 
 ## Index

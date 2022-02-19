@@ -1,5 +1,3 @@
----
----
 # How to install Ubuntu Server on a Raspberry Pi
 
 This article documents the manual build process I use to commission a new Raspberry Pi running Ubuntu Server

@@ -1,5 +1,3 @@
----
----
 # Line Endings
 
 ## Index

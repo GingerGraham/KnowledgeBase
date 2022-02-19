@@ -1,5 +1,3 @@
----
----
 # Splitting PEM SSH Keys
 
 Services such as Amazon AWS provide SSH keys as PEM (.pem) files.  While this can be consumed by the ssh command they do not work well with ssh-add and ssh-agents.

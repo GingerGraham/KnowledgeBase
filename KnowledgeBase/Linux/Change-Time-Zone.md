@@ -1,5 +1,3 @@
----
----
 # Time Zone Management
 
 ## Contents

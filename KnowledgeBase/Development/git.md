@@ -1,5 +1,3 @@
----
----
 # Working with Git
 
 - See [git](https://git-scm.com/) for details, documentation and downloads.

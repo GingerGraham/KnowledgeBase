@@ -1,5 +1,3 @@
----
----
 # Linux Cockpit Cache Refresh Error On Ubuntu
 
 When using [Cockpit](https://cockpit-project.org/) with Ubuntu some aspects appear not to work, such as attempting to refresh software updates.  A `Failed to refresh cache` error appears.

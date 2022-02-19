@@ -1,5 +1,3 @@
----
----
 # gitconfig files
 
 - This page discusses some of the customisations and configurations for .gitconfig files

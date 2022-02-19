@@ -1,5 +1,3 @@
----
----
 # Rename a group on Linux
 
 - Rename a group named *ubuntu*
