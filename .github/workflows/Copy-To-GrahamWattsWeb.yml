@@ -20,7 +20,7 @@ jobs:
           destination-username: 'gingergraham'
           destination-repository: 'GrahamWattsWeb'
           destination-branch: 'test'
-          destination-directory: 'src/_pages/knowledge/'
+          destination-directory: 'src/_pages/'
           commit-email: '34165628+GingerGraham@users.noreply.github.com'
           commit-username: 'Graham Watts'
           commit-message: 'Copy from KnowledgeBase'
