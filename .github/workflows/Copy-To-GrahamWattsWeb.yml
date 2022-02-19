@@ -16,11 +16,11 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-files: 'KnowledgeBase/'
+          source-files: 'KnowledgeBase/*'
           destination-username: 'gingergraham'
           destination-repository: 'GrahamWattsWeb'
           destination-branch: 'test'
-          destination-directory: 'src/_pages/'
+          destination-directory: 'src/_knowledge/'
           commit-email: '34165628+GingerGraham@users.noreply.github.com'
           commit-username: 'Graham Watts'
           commit-message: 'Copy from KnowledgeBase'
