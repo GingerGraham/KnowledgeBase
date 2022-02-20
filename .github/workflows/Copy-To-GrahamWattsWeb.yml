@@ -19,7 +19,7 @@ jobs:
           source-files: 'KnowledgeBase/*'
           destination-username: 'gingergraham'
           destination-repository: 'GrahamWattsWeb'
-          destination-branch: 'development'
+          destination-branch: 'main'
           destination-directory: 'src/_knowledge/'
           commit-email: '34165628+GingerGraham@users.noreply.github.com'
           commit-username: 'Graham Watts'
