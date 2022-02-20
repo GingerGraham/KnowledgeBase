@@ -1,6 +1,6 @@
-## Linux Check CPU Temp
+# Checking Linux CPU Temperatures
 
-## Index
+When working with physical systems it may be important to track and/or record CPU temperatures.
 
 ## Quick and Dirty
 

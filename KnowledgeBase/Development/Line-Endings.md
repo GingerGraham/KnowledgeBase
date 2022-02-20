@@ -1,8 +1,6 @@
-# Line Endings
+# Understanding And Working With Line Endings
 
-## Index
-
-- [Linux Line Endings Error](#linux-line-endings-error)
+If your workflow ever calls for working with multiple different platforms such as Windows, Linux and Mac, then you will need to be able to work with line endings.  This is a common problem when working with text files.
 
 ## Linux Line Endings Error
 

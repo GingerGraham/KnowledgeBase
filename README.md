@@ -4,22 +4,19 @@ This repository is my personal knowledge base of collected knowledge and experie
 
 It is also published to my website at <https://www.grahamwatts.co.uk>
 
-## New Articles
+## New Article Standards
 
 - Articles should be named replacing spaces with hyphons `-`
-- All articles should start with the Jekyll Front Matter designator at the top of the page before any content
-  - Not doing this will prevent the page being published on the website
-  - Any pages that do not need to be published, such as this ReadMe can omit the Front Matter, or include `published: false` in the Front Matter
+  - e.g. `my-article`
+- Do not create a self-built index on the page
+  - When publishing to the web site, the index will be created by the site itself
+  - Several markdown editors will create an index automatically
+- Wherever possible include a short description of the detail and scope of the article immediately after the title
 
-```yml
----
-# Front Matter
----
-```
+```markdown
+# Title
 
-```yml
----
-published: false
-# Explicit statement to prevent web publishing
----
+This is an introductory short description of the article
+
+The article contents continues below
 ```

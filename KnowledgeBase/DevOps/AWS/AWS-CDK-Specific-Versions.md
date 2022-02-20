@@ -4,12 +4,6 @@ In some circumstances a build environment may not be on the latest version of av
 
 In this case there are some approaches that can be taken
 
-## Contents
-
-1. [(Optional) Using a container](#using-a-container)
-1. [Prepare the environment](#prepare-the-environment)
-1. [Specific version of node.js](#specific-version-of-node)
-
 ## Using a container
 
 This step is **optional**

@@ -10,7 +10,7 @@ for path in $(find ${basePath} -type f \( -iname "*.md" ! -iname "*index*" ! -in
   title=$(basename -s .md ${path}) # generate a title from the file name
   titleLower=$(echo ${title} | awk '{print tolower($0)}') # set the title to lowercase
   titleSpaces=$(echo ${title} | tr "-" " " ) # replace hyphens with spaces
-  # excerpt=$(sed -n 3p ${path}) # get the first non-title line of the file
-  frontMatter="${startEnd}\npermalink: /${subjectLower}/${titleLower}/\nsubject: ${subject}\ntitle: ${titleSpaces}\n${startEnd}" # build Liquid Front Matter - builds multiline string
+  excerpt=$(sed -n 3p ${path}) # get the first non-title line of the file
+  frontMatter="${startEnd}\npermalink: /${subjectLower}/${titleLower}/\nsubject: ${subject}\ntitle: ${titleSpaces}\nexcerpt: ${excerpt}\n${startEnd}" # build Liquid Front Matter - builds multiline string
   sed -i "1i ${frontMatter}" ${path} # prepend the front matter to the head of the file
 done

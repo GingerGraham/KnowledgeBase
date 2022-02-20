@@ -1,8 +1,6 @@
 # Time Zone Management
 
-## Contents
-
-1. [Ubuntu Server 20.04](#ubuntu-server)
+Time zones can often be an issue when working with with multi-national organisations.  Often systems can be left in a default region such as US/Pacific which may not be the most appropriate if you systems are not located there.  Knowing how to set the timezone for a system can help administration teams.
 
 ## Ubuntu Server 20.04
 

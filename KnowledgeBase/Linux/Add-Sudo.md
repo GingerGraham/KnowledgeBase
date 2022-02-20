@@ -1,9 +1,6 @@
 # Adding sudo and adding users to sudo
 
-## Contents
-
-1. [Installing sudo](#installing-sudo)
-1. [Add user to sudo](#adding-user-to-sudo-group)
+sudo is often a vital tool when working with Linux based systems as it allows you to elevate your privileges to run commands as an administrator when required.
 
 ## Installing sudo
 

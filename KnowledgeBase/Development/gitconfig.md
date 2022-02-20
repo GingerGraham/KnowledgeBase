@@ -1,11 +1,9 @@
 # gitconfig files
 
+Gitconfig files are used to configure git and allow you to tailor how git works to your requirements.  For example, automatically handling line endings if you work across Windows, Linux and Mac, or defining your preferred editor for working with code files.
+
 - This page discusses some of the customisations and configurations for .gitconfig files
 - See [Git Configuration](https://www.git-scm.com/book/en/v2/Customizing-Git-Git-Configuration) for more details
-
-## Contents
-
-- [Auto CRLF](#auto-crlf)
 
 ## Auto CRLF
 

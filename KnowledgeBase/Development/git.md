@@ -1,11 +1,9 @@
 # Working with Git
 
+Git is the most popular version control system in the world. It is used to manage code, track changes, and collaborate with others.  Understanding how to work with git is essential to collaborating with teams and projects around the world.
+
 - See [git](https://git-scm.com/) for details, documentation and downloads.
 - [Scott Hanselman](https://www.hanselman.com/blog/) has some great explainer videos for git on his YouTube channel playlist [Things they didn't teach you at school](https://www.youtube.com/playlist?list=PL0M0zPgJ3HSesuPIObeUVQNbKqlw5U2Vr)
-
-## Contents
-
-1. [Branch merging](#merging-branches)
 
 ## Merging Branches
 

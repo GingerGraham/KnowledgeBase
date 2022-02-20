@@ -1,8 +1,6 @@
-# Watchdog
+# Linux Watchdog
 
-## Index
-
-1. [Hardware Devices](#hardware-device)
+Watchdog is a daemon that monitors the health of a system and its processes and can restart them if they are not responding.
 
 ## Hardware Device
 
