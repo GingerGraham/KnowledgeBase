@@ -1,3 +1,5 @@
+name: Copy Knowledge Base to Graham Watts Web
+
 on: 
   push:
     branches:
