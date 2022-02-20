@@ -1,6 +1,6 @@
 # Rename a host machine
 
-When working with Linux based systems it may be required to rename a host machine.  This can be done using the following commands:
+When working with Linux based systems it may be required to rename a host machine.  This can be done using the following commands.
 
 - Use hostnamectl to change the host name
 
