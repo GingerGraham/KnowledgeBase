@@ -20,6 +20,8 @@ jobs:
           submodules: true
       - name: Add Front Matter
         run: .github/scripts/addFrontMatter.sh
+      - name: Update Links
+        run: .github/scripts/updateLinks.sh
       - name: Copy files to GrahamWattsWeb
         uses: nkoppel/push-files-to-another-repository@v1.1.0
         env:
