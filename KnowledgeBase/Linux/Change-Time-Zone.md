@@ -16,4 +16,4 @@ Time zones can often be an issue when working with with multi-national organisat
 
     ![Select time zone city](../assets/Linux/Configuring-Tzdata-by-selecting-city-or-region.jpg "Select time zone city")
 
-Taken from: https://www.how2shout.com/linux/command-to-change-timezone-in-ubuntu-20-04-server/
+Taken from: <https://www.how2shout.com/linux/command-to-change-timezone-in-ubuntu-20-04-server/>

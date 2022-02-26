@@ -59,4 +59,4 @@ Applies to physical machines such as Raspberry Pi
         sudo systemctl start watchdog
         sudo systemctl status watchdog
 
-Taken from: https://diode.io/raspberry%20pi/running-forever-with-the-raspberry-pi-hardware-watchdog-20202/
+Taken from: <https://diode.io/raspberry%20pi/running-forever-with-the-raspberry-pi-hardware-watchdog-20202/>

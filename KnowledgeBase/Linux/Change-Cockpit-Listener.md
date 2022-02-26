@@ -22,4 +22,4 @@ Where [Cockpit](https://cockpit-project.org/) is being run on a server with othe
             ListenStream=192.168.1.1:443
             FreeBind=yes
 
-Taken from: https://cockpit-project.org/guide/latest/listen
+Taken from: <https://cockpit-project.org/guide/latest/listen>

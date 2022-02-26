@@ -47,25 +47,29 @@ This article documents the manual build process I use to commission a new Raspbe
 
 1. Create a temp user with `sudo` privileges
 
+        ```bash
         sudo adduser temp
         sudo usermod -aG sudo temp
+        ```
 
 1. Log out
 1. Log back in as *temp*
-1. See [Rename a user](../Linux/RenameUser.md)
+1. See [Rename a user](../Linux/Rename-User.md)
 ## Rename Group
 
 1. Without logging out from temp having renamed the default user now rename the group
-    - See [Rename a group](../Linux/RenameGroup.md)
+    - See [Rename a group](../Linux/Rename-Group.md)
 
 1. Now you can log out and back in with the new username
 
 ## Rename Host
 
 - Use hostnamectl to rename host without a reboot
-    - See [Rename a host](../Linux/RenameHostMachine.md)
+    - See [Rename a host](../Linux/Rename-Host-Machine.md)
 ## Apply Updates
 
 A simple command to update repo list and apply all applicable updates while also cleaning up any old packages
 
-        sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
+```bash
+sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
+```

@@ -10,4 +10,4 @@ When working with Linux based systems it may be required to rename a host machin
 
         hostnamectl set-hostname "new pretty name" --pretty
 
-Taken from (https://phoenixnap.com/kb/ubuntu-20-04-change-hostname)
+Taken from <https://phoenixnap.com/kb/ubuntu-20-04-change-hostname>
