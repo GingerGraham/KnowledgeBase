@@ -4,11 +4,16 @@ If your workflow ever calls for working with multiple different platforms such a
 
 ## Linux Line Endings Error
 
-- Error message: `/usr/bin/env: 'python\r'`
+- Error message from Python: `/usr/bin/env: 'python\r': No such file or directory`
 
-        gwatts@gw-x260$ ./FirstMaths.py
+        gwatts@gw-x260$ ./HelloWorld.py
         /usr/bin/env: 'python\r': No such file or directory
 
+- Error message from bash: `/bin/sh^M: bad interpreter: No such file or directory`
+
+        gwatts@gw-x260$ ./HelloWorld.sh 
+        -bash: ./clusterCheck.sh: /bin/sh^M: bad interpreter: No such file or directory
+        
 - Cause: Windows **CRLF** endings being used
 - Resolution: `dos2unix`
     - Run `dos2unix` to convert line endings to Unix **LF** endings
