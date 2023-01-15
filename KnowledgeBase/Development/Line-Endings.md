@@ -21,4 +21,7 @@ If your workflow ever calls for working with multiple different platforms such a
             gwatts@gw-x260$ dos2unix HelloWorld.py
             dos2unix: converting file HelloWorld.py to Unix format...
 
+<!-- Adding for inclusion in personal website based on Jekyll -->
+{% include youtube.html id="TtiBhktB4Qg" %}
+
 - Reference: [Scott Hanselman: Carriage Returns and Line Endings](https://www.hanselman.com/blog/carriage-returns-and-line-feeds-will-ultimately-bite-you-some-git-tips)
