@@ -4,7 +4,9 @@ Watchdog is a daemon that monitors the health of a system and its processes and 
 
 ## Hardware Device
 
-Applies to physical machines such as Raspberry Pi
+- Applies to physical machines such as Raspberry Pi
+- Steps below target Debian based systems such as Ubuntu using the `apt` package manager
+  - Adjust as required for other package managers and distributions
 
 1. Enable hardware watchdog
 
@@ -12,11 +14,11 @@ Applies to physical machines such as Raspberry Pi
         echo 'dtparam=watchdog=on' >> /boot/config.txt
         reboot
 
-1. Install watchdog service
+2. Install watchdog service
 
         sudo apt-get install watchdog
 
-1. Configure the watchdog
+3. Configure the watchdog
     - Edit `/etc/watchdog.conf`
     - Changes can be customer as required
         - Common base values I use
@@ -26,7 +28,7 @@ Applies to physical machines such as Raspberry Pi
                 max-load-1              = 24
                 max-load-5              = 18
                 max-load-15             = 12
-                
+
                 watchdog-device = /dev/watchdog
                 watchdog-timeout = 15 # seconds
 
@@ -34,7 +36,7 @@ Applies to physical machines such as Raspberry Pi
                 temperature-device      = /sys/class/thermal/thermal_zone0/temp
                 max-temperature = 90
         - Add network interface monitoring
-                
+
                 # Check and ensure network is up
                 interface               = eth0
 
@@ -53,7 +55,7 @@ Applies to physical machines such as Raspberry Pi
                 pidfile    = /var/run/lighttpd.pid
                 pidfile    = /var/run/sshd.pid
 
-1. Enable the service
+4. Enable the service
 
         sudo systemctl enable watchdog
         sudo systemctl start watchdog

@@ -10,6 +10,7 @@ This section includes articles for working with Linux and various distros
 - System Hardware
     - [Linux Watchdog](Watchdog.md)
     - [Monitoring Temperatures](CPU-Thermal.md)
+    - [Stress Testing](Sress-Testing.md)
 - System Administration
     - [Changing Time Zones](Change-Time-Zone.md)
     - [Install sudo and add user](Add-Sudo.md)

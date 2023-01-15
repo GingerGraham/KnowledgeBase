@@ -4,4 +4,14 @@ When administering a Linux based system it is often useful to rename a group.  T
 
 - Rename a group named *ubuntu*
 
-        sudo groupmod -n <newname> ubuntu # <-- old groupname
+```bash
+sudo groupmod -n <newname> ubuntu # <-- old groupname
+```
+
+**Example**
+
+Rename the group *ubuntu* to *ubuntu2*
+
+```bash
+sudo groupmod -n ubuntu2 ubuntu
+```

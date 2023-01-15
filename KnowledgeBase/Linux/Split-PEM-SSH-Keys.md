@@ -1,6 +1,6 @@
 # Splitting PEM SSH Keys
 
-Services such as Amazon AWS provide SSH keys as PEM (.pem) files.  While this can be consumed by the ssh command they do not work well with ssh-add and ssh-agents.
+Services such as Amazon AWS provide SSH keys as PEM (.pem) files.  While this can be consumed by the ssh command they do not always work well with ssh-add and ssh-agents.
 
 ## User OpenSSL to reformat and split a PEM key
 
@@ -9,6 +9,8 @@ Services such as Amazon AWS provide SSH keys as PEM (.pem) files.  While this ca
     ```bash
     openssl pkey < *pem_file*.pem > *exported_key*
     ```
+
+    **Example**
 
     ```bash
     openssl pkey < demo.pem > demo
@@ -19,6 +21,8 @@ Services such as Amazon AWS provide SSH keys as PEM (.pem) files.  While this ca
     ```bash
     openssl rsa -in *exported_key* -pubout > *public_key*.pub
     ```
+
+    **Example**
 
     ```bash
     openssl rsa -in demo -pubout > demo.pub
@@ -32,6 +36,8 @@ Services such as Amazon AWS provide SSH keys as PEM (.pem) files.  While this ca
     chmod 600 *exported_key*
     ```
 
+    **Example**
+
     ```bash
     chmod 600 demo
     ```
@@ -44,9 +50,11 @@ Services such as Amazon AWS provide SSH keys as PEM (.pem) files.  While this ca
     ssh-keygen -p -f *exported_key*
     ```
 
+    **Example**
+
     ```bash
     ssh-keygen -p -f demo
-    Enter new passphrase (empty for no passphrase): 
-    Enter same passphrase again: 
+    Enter new passphrase (empty for no passphrase):
+    Enter same passphrase again:
     Your identification has been saved with the new passphrase.
     ```

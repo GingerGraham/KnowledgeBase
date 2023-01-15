@@ -7,9 +7,9 @@ When working with physical systems it may be important to track and/or record CP
 Requires no add-on installed packages
 
         paste <(cat /sys/class/thermal/thermal_zone*/type) <(cat /sys/class/thermal/thermal_zone*/temp) | column -s $'\t' -t | sed 's/\(.\)..$/.\1°C/'
-        
+
         e.g.
-        
+
         gwatts@pr-monitor-01:~$ paste <(cat /sys/class/thermal/thermal_zone*/type) <(cat /sys/class/thermal/thermal_zone*/temp) | column -s $'\t' -t | sed 's/\(.\)..$/.\1°C/'
         cpu-thermal  79.3°C
 
@@ -25,7 +25,7 @@ Requires no add-on installed packages
         rpi_volt-isa-0000
         Adapter: ISA adapter
         in0:              N/A
-        
+
         cpu_thermal-virtual-0
         Adapter: Virtual device
         temp1:        +67.7°C
@@ -33,12 +33,12 @@ Requires no add-on installed packages
 1. Or, watch sensors
 
         watch sensors
-        
+
         Every 2.0s: sensors                                            pr-monitor-01: Fri Aug 13 13:32:57 2021
         rpi_volt-isa-0000
         Adapter: ISA adapter
         in0:              N/A
-        
+
         cpu_thermal-virtual-0
         Adapter: Virtual device
         temp1:        +69.6°C

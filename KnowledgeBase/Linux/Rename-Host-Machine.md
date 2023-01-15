@@ -4,10 +4,22 @@ When working with Linux based systems it may be required to rename a host machin
 
 - Use hostnamectl to change the host name
 
-        hostnamectl set-hostname "new-hostname"
+```bash
+hostnamectl set-hostname "new-hostname"
+```
 
 - Can also set the pretty, or display, name with the same tool
 
-        hostnamectl set-hostname "new pretty name" --pretty
+```bash
+hostnamectl set-hostname "new pretty name" --pretty
+```
+
+**Example**
+
+Rename the host machine *ubuntu* to *ubuntu2*
+
+```bash
+hostnamectl set-hostname "ubuntu2"
+```
 
 Taken from <https://phoenixnap.com/kb/ubuntu-20-04-change-hostname>

@@ -4,6 +4,16 @@ When working with Linux based systems it may be required to rename a user.  This
 
 1. Example to rename user named *ubuntu*
 
-        sudo usermod -l <newname> -d /home/<newname> -m ubuntu # <-- oldname
+```bash
+sudo usermod -l <newname> -d /home/<newname> -m ubuntu # <-- oldname
+```
+
+**Example**
+
+Rename the user *ubuntu* to *ubuntu2*
+
+```bash
+sudo usermod -l ubuntu2 -d /home/ubuntu2 -m ubuntu
+```
 
 Taken from <https://www.codegrepper.com/code-examples/shell/rename+username+ubuntu+20.04>
