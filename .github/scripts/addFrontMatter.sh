@@ -15,6 +15,8 @@ for path in $(find ${basePath} -type f \( -iname "*.md" ! -iname "*index*" ! -in
   # Removed the subject from the front matter as the path on my website does not include the subject and all posts as from /knowledge
   #frontMatter="${startEnd}\npermalink: /knowledge/${subjectLower}/${titleLower}/\nsubject: ${subject}\ntitle: ${titleSpaces}\nexcerpt: "${excerpt}"\n${startEnd}" # build Liquid Front Matter - builds multiline string
   sed -i "1i ${frontMatter}" ${path} # prepend the front matter to the head of the file
+  # Add new line after end of file
+  sed -i '$a ' ${path}
   # Append breadcrumbs include to the end of the file on a new line and adding a new line to the end of the file
   sed -i '$a {% include breadcrumbs2.html %}' ${path}
 done
