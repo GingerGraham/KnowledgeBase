@@ -1,6 +1,8 @@
 # Kubectl
 
-`kubectl` is a command line tool for controlling Kubernetes clusters.  When configured correctly, `kubectl` can be used to perform all of the same operations as the Kubernetes dashboard across local and remote clusters, including those hosted on cloud services such as AWS EKS and Azure AKS.
+`kubectl` is a command line tool for controlling Kubernetes clusters.
+
+When configured correctly, `kubectl` can be used to perform all of the same operations as the Kubernetes dashboard across local and remote clusters, including those hosted on cloud services such as AWS EKS and Azure AKS.
 
 For more information on `kubectl` see the [official documentation](https://kubernetes.io/docs/reference/kubectl/overview/).
 
