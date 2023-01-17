@@ -11,6 +11,8 @@ for path in $(find ${basePath} -type f \( -iname "*.md" ! -iname "*index*" ! -in
   titleLower=$(echo ${title} | awk '{print tolower($0)}') # set the title to lowercase
   titleSpaces=$(echo ${title} | tr "-" " " ) # replace hyphens with spaces
   excerpt=$(sed -n 3p ${path}) # get the first non-title line of the file
+  # Remove special chracters from excerpt
+  excerpt=$(echo ${excerpt} | sed -e 's/[^a-zA-Z0-9 ]//g')
   frontMatter="${startEnd}\npermalink: /knowledge/${titleLower}/\nsubject: ${subject}\ntitle: ${titleSpaces}\nexcerpt: "${excerpt}"\n${startEnd}" # build Liquid Front Matter - builds multiline string
   # Removed the subject from the front matter as the path on my website does not include the subject and all posts as from /knowledge
   #frontMatter="${startEnd}\npermalink: /knowledge/${subjectLower}/${titleLower}/\nsubject: ${subject}\ntitle: ${titleSpaces}\nexcerpt: "${excerpt}"\n${startEnd}" # build Liquid Front Matter - builds multiline string
