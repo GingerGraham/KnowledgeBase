@@ -1,6 +1,6 @@
 name: Copy Knowledge Base to Graham Watts Web
 
-on: 
+on:
   push:
     branches:
       - main
@@ -22,6 +22,8 @@ jobs:
         run: .github/scripts/addFrontMatter.sh
       - name: Update Links
         run: .github/scripts/updateLinks.sh
+      - name: Convert H1 to H2
+        run: .github/scripts/convertH1toH2.sh
       - name: Copy files to GrahamWattsWeb
         uses: nkoppel/push-files-to-another-repository@v1.1.0
         env:

@@ -1,6 +1,8 @@
 # Ubuntu 20.04 Raspberry Pi PoE+ Hat Fan
 
-By default the PoE+ Hat is only supported in Raspian.  Running Ubuntu server may result in the fan not starting and temperatures becoming critical on the Raspberry Pi CPU.
+By default the PoE+ Hat is only supported in Raspian.  Ubuntu server may not start the fan correctly without configuration.
+
+Running Ubuntu server may result in the fan not starting and temperatures becoming critical on the Raspberry Pi CPU.
 
 ## Boot Firmware User Config
 
@@ -12,7 +14,7 @@ By default the PoE+ Hat is only supported in Raspian.  Running Ubuntu server may
         # Place "config.txt" changes (dtparam, dtoverlay, disable_overscan, etc.) in
         # this file. Please refer to the README file for a description of the various
         # configuration files on the boot partition.
-        
+
         dtoverlay=pwm
         dtoverlay=gpio-fan
         dtoverlay=rpi-poe
