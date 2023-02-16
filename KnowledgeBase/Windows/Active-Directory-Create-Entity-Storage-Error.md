@@ -14,7 +14,7 @@ Trying to create a new Active Directory Domain Services (AD DS) object such as a
 Windows cannot create the object <object name> because: Not enough storage is available to complete this operation
 ```
 
-![Active Directory Storage Error](../assets/Windows/ad-out-of-space-error.png "Active Directory create object failing reporting not enough storage available")
+![Active Directory Storage Error](../assets/Windows/ad-out-of-space-error.webp "Active Directory create object failing reporting not enough storage available")
 
 ## Resolution
 
