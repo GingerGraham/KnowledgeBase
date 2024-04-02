@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout KnowledgeBase
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: true
       - name: Add Front Matter
@@ -25,7 +25,7 @@ jobs:
       - name: Convert H1 to H2
         run: .github/scripts/convertH1toH2.sh
       - name: Copy files to GrahamWattsWeb
-        uses: nkoppel/push-files-to-another-repository@v1.1.0
+        uses: nkoppel/push-files-to-another-repository@v1.1.2
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
