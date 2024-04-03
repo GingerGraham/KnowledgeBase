@@ -24,7 +24,7 @@ jobs:
         run: .github/scripts/updateLinks.sh
       - name: Convert H1 to H2
         run: .github/scripts/convertH1toH2.sh
-      - name: [DEBUG] Show file contents
+      - name: "[DEBUG] Show file contents"
         run: github/scripts/printFileContents.sh
       # - name: Copy files to GrahamWattsWeb
       #   uses: nkoppel/push-files-to-another-repository@v1.1.2
