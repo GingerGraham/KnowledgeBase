@@ -2,8 +2,8 @@ name: Copy Knowledge Base to Graham Watts Web
 
 on:
   push:
-    # branches:
-      # - main
+    branches:
+      - main
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
@@ -19,26 +19,24 @@ jobs:
         with:
           submodules: true
       - name: Add Front Matter
-        run: .github/scripts/addFrontMatter.sh
+        run: .github/scripts/prod/addFrontMatter.sh
       - name: Update Links
-        run: .github/scripts/updateLinks.sh
+        run: .github/scripts/prod/updateLinks.sh
       - name: Convert H1 to H2
-        run: .github/scripts/convertH1toH2.sh
-      - name: "[DEBUG] Show file contents"
-        run: .github/scripts/printFileContents.sh
-      # - name: Copy files to GrahamWattsWeb
-      #   uses: nkoppel/push-files-to-another-repository@v1.1.2
-      #   env:
-      #     API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-      #   with:
-      #     source-files: 'KnowledgeBase/*'
-      #     destination-username: 'gingergraham'
-      #     destination-repository: 'GrahamWattsWeb'
-      #     destination-branch: 'main'
-      #     destination-directory: 'src/_knowledge/'
-      #     commit-email: '34165628+GingerGraham@users.noreply.github.com'
-      #     commit-username: 'Graham Watts'
-      #     commit-message: 'Copy from KnowledgeBase'
+        run: .github/scripts/prod/convertH1toH2.sh
+      - name: Copy files to GrahamWattsWeb
+        uses: nkoppel/push-files-to-another-repository@v1.1.2
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-files: 'KnowledgeBase/*'
+          destination-username: 'gingergraham'
+          destination-repository: 'GrahamWattsWeb'
+          destination-branch: 'main'
+          destination-directory: 'src/_knowledge/'
+          commit-email: '34165628+GingerGraham@users.noreply.github.com'
+          commit-username: 'Graham Watts'
+          commit-message: 'Copy from KnowledgeBase'
 
 # source-files (argument)
 # The files/directories to copy to the destination repository. Can have multiple space-separated filenames and globbing.

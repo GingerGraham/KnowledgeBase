@@ -1,0 +1,25 @@
+name: Verify Output
+
+on:
+  push:
+    branches:
+      - '*'
+      - '!main'
+  workflow_dispatch:
+
+jobs:
+  copy-to-grahamwattsweb:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout KnowledgeBase
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+      - name: Add Front Matter
+        run: .github/scripts/debug/addFrontMatter.sh
+      - name: Update Links
+        run: .github/scripts/debug/updateLinks.sh
+      - name: Convert H1 to H2
+        run: .github/scripts/debug/convertH1toH2.sh
+      - name: "[DEBUG] Show file contents"
+        run: .github/scripts/debug/printFileContents.sh
