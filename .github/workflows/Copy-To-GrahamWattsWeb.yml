@@ -24,19 +24,21 @@ jobs:
         run: .github/scripts/updateLinks.sh
       - name: Convert H1 to H2
         run: .github/scripts/convertH1toH2.sh
-      - name: Copy files to GrahamWattsWeb
-        uses: nkoppel/push-files-to-another-repository@v1.1.2
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        with:
-          source-files: 'KnowledgeBase/*'
-          destination-username: 'gingergraham'
-          destination-repository: 'GrahamWattsWeb'
-          destination-branch: 'main'
-          destination-directory: 'src/_knowledge/'
-          commit-email: '34165628+GingerGraham@users.noreply.github.com'
-          commit-username: 'Graham Watts'
-          commit-message: 'Copy from KnowledgeBase'
+      - name: [DEBUG] Show file contents
+        run: github/scripts/printFileContents.sh
+      # - name: Copy files to GrahamWattsWeb
+      #   uses: nkoppel/push-files-to-another-repository@v1.1.2
+      #   env:
+      #     API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      #   with:
+      #     source-files: 'KnowledgeBase/*'
+      #     destination-username: 'gingergraham'
+      #     destination-repository: 'GrahamWattsWeb'
+      #     destination-branch: 'main'
+      #     destination-directory: 'src/_knowledge/'
+      #     commit-email: '34165628+GingerGraham@users.noreply.github.com'
+      #     commit-username: 'Graham Watts'
+      #     commit-message: 'Copy from KnowledgeBase'
 
 # source-files (argument)
 # The files/directories to copy to the destination repository. Can have multiple space-separated filenames and globbing.
