@@ -1,5 +1,7 @@
 # KnowledgeBase
 
+[![Copy Knowledge Base to Graham Watts Web](https://github.com/GingerGraham/KnowledgeBase/actions/workflows/Copy-To-GrahamWattsWeb.yml/badge.svg)](https://github.com/GingerGraham/KnowledgeBase/actions/workflows/Copy-To-GrahamWattsWeb.yml)
+
 This repository is my personal knowledge base of collected knowledge and experiences
 
 It is also published to my website at <https://www.grahamwatts.co.uk>
